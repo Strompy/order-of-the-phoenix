@@ -2,7 +2,7 @@ class PotterService
   def self.search(house)
     members = get_json("characters?orderOfThePhoenix=true&house=#{house}")
     members.map do |member|
-      Character.create(member)
+      Character.create(name: member[:name], house: member[:house], role: member[:role], patronus: member[:patronus])
     end
   end
 
