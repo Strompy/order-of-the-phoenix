@@ -1,14 +1,26 @@
-<h1>Order Of The Phoonix Members From House Gryffindor</h1>
+<h1>Order Of The Phoenix Members From House Gryffindor</h1>
 
 <h2>Order Of The Phoenix Members: <%= @members.size %></h2>
-<section class="members"
-  <h3>Known Member Details</h3>
+<section class="members">
+  <h3>Known Member Details:</h3>
   <% @members.each do |member| %>
   <section class="phoenix-member">
-    <p class="phoenix-member-name"><%= member.name %></p>
-    <p class="phoenix-member-role"><%= member.role %></p>
-    <p class="phoenix-member-house"><%= member.house %></p>
-    <p class="phoenix-member-patronus"><%= member.patronus %></p>
+    <h4 class="phoenix-member-name"><%= member.name %></h4>
+    <p class="phoenix-member-role">Role:
+      <% if member.role %>
+        <%= member.role %>
+      <% else %>
+        Unknown
+      <% end %>
+    </p>
+    <p class="phoenix-member-house">House: <%= member.house %></p>
+    <p class="phoenix-member-patronus">Patronus:
+      <% if member.patronus %>
+        <%= member.patronus %>
+      <% else %>
+        Unknown
+      <% end %>
+    </p>
   </section>
   <% end %>
 </section>
