@@ -1,10 +1,15 @@
-<h1>Order Of The Phoenix Members From House Gryffindor</h1>
+<nav>
 
-<h2>Order Of The Phoenix Members: <%= @members.size %></h2>
+</nav>
+
+<h1>Order Of The Phoenix Members From House <%= @house %></h1>
+<%= link_to "← New Search", root_path %>
+<h2>Known Order Of The Phoenix Members: <%= @members.size %></h2><br>
 <section class="members">
-  <h3>Known Member Details:</h3>
+  <h3>Member Details:</h3>
   <% @members.each do |member| %>
   <section class="phoenix-member">
+    <hr/>
     <h4 class="phoenix-member-name"><%= member.name %></h4>
     <p class="phoenix-member-role">Role:
       <% if member.role %>
