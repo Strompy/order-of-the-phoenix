@@ -17,9 +17,33 @@
    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
  }
 
- h1 {
+ /* h1 {
    background-color: #333;
    color: #f2f2f2;
+   padding: 14px 16px;
+ } */
+
+ h1.house-Gryffindor {
+   background-color: #7F0909;
+   color: #FFC500;
+   padding: 14px 16px;
+ }
+
+ h1.house-Slytherin {
+   background-color: #0D6217;
+   color: #AAAAAA;
+   padding: 14px 16px;
+ }
+
+ h1.house-Ravenclaw {
+   background-color: #000A90;
+   color: #946B2D;
+   padding: 14px 16px;
+ }
+
+ h1.house-Hufflepuff {
+   background-color: #000000;
+   color: #EEE117;
    padding: 14px 16px;
  }
 

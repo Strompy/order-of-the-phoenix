@@ -2,7 +2,7 @@
 
 </nav>
 
-<h1>Order Of The Phoenix Members From House <%= @house %></h1>
+<h1 class="house-<%= @house %>">Order Of The Phoenix Members From House <%= @house %></h1>
 <%= link_to "← New Search", root_path %>
 <h2>Known Order Of The Phoenix Members: <%= @members.size %></h2><br>
 <section class="members">
