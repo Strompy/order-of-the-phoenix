@@ -5,6 +5,7 @@
 <h1 class="house-<%= @house %>">Order Of The Phoenix Members From House <%= @house %></h1>
 <%= link_to "← New Search", root_path %>
 <h2>Known Order Of The Phoenix Members: <%= @members.size %></h2><br>
+<% unless @members.empty? %>
 <section class="members">
   <h3>Member Details:</h3>
   <% @members.each do |member| %>
@@ -29,3 +30,4 @@
   </section>
   <% end %>
 </section>
+<% end %>
